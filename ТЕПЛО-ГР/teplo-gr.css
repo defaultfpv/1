@@ -878,6 +878,7 @@ h3 {
     border: 0;
     margin: 14px;
     color: #f9e1cf;
+    text-decoration: none;
 }
 :focus {
 	outline: 0;
