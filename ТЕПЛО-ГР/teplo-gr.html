@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Тепло-Гарант</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="teplo-gr.js"></script>
+    <link rel="stylesheet" href="teplo-gr.css">
+</head>
+<body>
+    <!-- опен-формы -->
+    <div id="openform" class="display-none">
+        <div id="form">
+            <!-- каталог -->
+            <div class="left-head"><div class="margin-left-head">Каталог</div></div>
+            <!-- кнопочки -->
+            <div class="left-main"><button class="button-plus"></button>Котлы и водонагреватели</div>
+            <div class="left-main"><div class="margin-left">Колонки газовые</div></div>
+            <div class="left-main"><button class="button-plus"></button>Радиаторы</div>
+            <div class="left-main br2"><button class="button-plus"></button>Коллекторы и коллекторные группы</div>
+            <div class="left-main"><button class="button-plus"></button>Насосы</div>
+            <div class="left-main"><button class="button-plus"></button>Газовое оборудование</div>
+            <div class="left-main"><button class="button-plus"></button>Конвекторы</div>
+            <div class="left-main"><button class="button-plus"></button>Теплые полы</div>
+            <div class="left-main"><button class="button-plus"></button>Трубы и фитинги</div>
+            <div class="left-main"><div class="margin-left">Краны</div></div>
+            <div class="left-main"><button class="button-plus"></button>Арматура для котельной</div>
+            <div class="left-main br2"><button class="button-plus"></button>Предохранительная арматура</div>
+            <div class="left-main"><button class="button-plus"></button>Водоснабжение</div>
+            <div class="left-main"><button class="button-plus"></button>Генераторы</div>
+            <div class="left-main"><button class="button-plus"></button>Сантехника</div>
+            <div class="left-main"><button class="button-plus"></button>Канализация</div>
+            <div class="left-main" style="border: 0;"><div class="margin-left">Теплоноситель</div></div>
+        </div>
+    </div>
+    <!-- опен-формы2 -->
+    <div id="openform2" class="display-none">
+        <div id="form2">
+            <div id="search-form2">
+                <!-- поисковая строка(текст) -->
+                <input type="text" name="" id="search-text" title="Введите запрос" placeholder="Поиск по сайту">
+                <!-- кнопка поиска -->
+                <button id="search-button"><img id="lupaaa" src="img\lupaa.png"></button>					
+            </div>
+        </div>
+    </div>
+    <!-- ХЕДЕР -->
+    <header>
+        <!-- топ-бар -->
+        <div id="top-bar">
+            <div class="fix-conteiner top-bar">
+                <div id="windows">
+                    <!--  окно-поиска -->
+                    <div class="window" style="margin-right: -15px;">
+                        <!-- поисковая строка -->
+                        <input type="text" placeholder="Найти на сайте">
+                        <!-- кнопка поиска -->
+                        <button id="search-button"><a href="#" title="Поиск"><img src="img/lupa.png"></a></button>
+                    </div>
+                    <!-- окно: связь с нами -->
+                    <div id="window-none" class="window">
+                        <!-- img смс -->
+                        <img src="img/massage.png">
+                        <!-- ссылка: связь с нами -->
+                        <div style="margin-left: 5px;"><a href="#" title="Перейти">Связаться с нами</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Головная информация -->
+        <div class="fix-conteiner header">
+            <!-- шапка -->
+            <div id="header-info">
+                <!-- правая колонка -->
+                <div id="heder-column1">
+                    <!-- логотип -->
+                    <div id="logo-conteiner">
+                        <img id="img-logo" src="img/logo.png" title="Наш логотип">
+                    </div>
+                    <!-- Тепло-Гарант -->
+                    <h1><a href="#">Тепло-Гарант</a></h1>
+                </div>
+                <!-- левая колонка -->
+                <div id="heder-column2">
+                    <!-- адрес -->
+                    <div id="adres">Брянская обл., Брянский р-он, пос. Супонево, ул. Шоссейная, д.8</div>
+                    <!-- Е-мэйл -->
+                    <div id="mail">e-mail:&nbsp;<a href="#" title="Перейти">teplogr@mail.ru</a></div>
+                    <!-- телефон -->
+                    <div id="phone">
+                        <div id="min-size">+7 (4832)&nbsp;</div>
+                        <div id="big-size">32-01-02</div>
+                    </div>
+                </div>
+                <!-- невидимая колонка -->
+                <div id="heder-column3" class="display-none">
+                    <!-- фирма -->
+                    <h4 id="h4">Тепло-Гарант</h4>
+                    <div class="head-top display-none">
+                        <h4><img src="img/logo.png" class="img-logo">&nbsp;&nbsp;Тепло-Гарант</h4>
+                        <a href="#" id="search" class="display-none"><img id="search-img" src="img/lupaa.png"></a>
+                    </div>
+                    <!-- кнопки -->
+                    <div id="buttons-conteiner">
+                        <!-- Каталог -->
+                        <button id="catalog" class="display-none">Каталог</button>
+                        <!-- Сервис -->
+                        <button id="servis" class="display-none">Меню</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ссылки -->
+            <div id="header-links">
+                <!-- Каталог -->
+                <button id="catalog1" class="display-none">Каталог</button>
+                <!-- Сервис -->
+                <button id="servis" class="display-none">Меню</button>
+                <button class="header-links first"><a href="#" title="Перейти">Продукция</a></button>
+                <button class="header-links"><a href="#" title="Перейти">Rinnai</a></button>
+                <button class="header-links"><a href="#" title="Перейти">О компании</a></button>
+                <button class="header-links"><a href="#" title="Перейти">Сервис</a></button>
+                <button class="header-links"><a href="#" title="Перейти">Новости</a></button>
+                <button class="header-links"><a href="#" title="Перейти">Наши объекты</a></button>
+                <button class="header-links last"><a href="#" title="Перейти">Контакты</a></button>
+            </div>
+        </div>
+    </header>
+    <!-- МЭЙН -->
+    <main>
+        <!-- РЕКЛАМНЫЙ БЛОК -->
+        <div id="pr-blok">
+            <div class="fix-conteiner pr-blok">
+                <div id="pr-baner">
+                    <img src="img/baner.png" title="Актуальные акции">
+                </div>
+            </div>
+        </div>
+        <!-- ОСНОВНОЕ СОДЕРЖАНИЕ САЙТА -->
+        <div id="main-blok">
+            <div class="fix-conteiner main-blok">
+                <!-- левая колонка -->
+                <div id="left-column">
+                    <!-- ПЕРВЫЙ БЛОК МЕНЮ -->
+                    <div id="left-first-blok">
+                        <!-- каталог -->
+                        <div class="left-head"><div class="margin-left-head">Каталог</div></div>
+                        <!-- кнопочки -->
+                        <div class="left-main"><button class="button-plus"></button>Котлы и водонагреватели</div>
+                        <div class="left-main"><div class="margin-left">Колонки газовые</div></div>
+                        <div class="left-main"><button class="button-plus"></button>Радиаторы</div>
+                        <div class="left-main br2"><button class="button-plus"></button>Коллекторы и коллекторные группы</div>
+                        <div class="left-main"><button class="button-plus"></button>Насосы</div>
+                        <div class="left-main"><button class="button-plus"></button>Газовое оборудование</div>
+                        <div class="left-main"><button class="button-plus"></button>Конвекторы</div>
+                        <div class="left-main"><button class="button-plus"></button>Теплые полы</div>
+                        <div class="left-main"><button class="button-plus"></button>Трубы и фитинги</div>
+                        <div class="left-main"><div class="margin-left">Краны</div></div>
+                        <div class="left-main"><button class="button-plus"></button>Арматура для котельной</div>
+                        <div class="left-main br2"><button class="button-plus"></button>Предохранительная арматура</div>
+                        <div class="left-main"><button class="button-plus"></button>Водоснабжение</div>
+                        <div class="left-main"><button class="button-plus"></button>Генераторы</div>
+                        <div class="left-main"><button class="button-plus"></button>Сантехника</div>
+                        <div class="left-main"><button class="button-plus"></button>Канализация</div>
+                        <div class="left-main" style="border: 0;"><div class="margin-left">Теплоноситель</div></div>
+                    </div>
+                    <!-- ВТОРОЙ БЛОК МЕНЮ -->
+                    <div id="left-second-blok"></div>
+                    <!-- ТРЕТИЙ БЛОК МЕНЮ -->
+                    <div id="left-last-blok">
+                    <!-- новости -->
+                    <div class="left-head"><div class="margin-left-head">Новости</div></div>
+                        <!-- 1я новость -->
+                        <div></div>
+                        <!-- 2я новость -->
+                        <div></div>
+                        <!-- 3я новость -->
+                        <div></div>
+                    </div>
+                </div>
+                <!-- правая колонка -->
+                <div id="right-column">
+                    <!-- шапка -->
+                    <div id="right-column-head-all">
+                        <!-- 1я строка -->
+                        <div id="right-column-head-1">Продукция</div>
+                        <!-- 2я строка -->
+                        <div id="right-column-head-2">Газовые котлы в Брянске от компании «Тепло-Гарант»</div>
+                        <!-- 3я строка -->
+                        <div id="right-column-head-3" class="black-a">Сортировать по:&nbsp;<a href="#">умолчанию</a>&nbsp;|&nbsp;<a href="#">цене</a>&nbsp;|&nbsp;<a href="#">наименованию</a></div>
+                    </div>
+                    <!-- блок картинок -->
+                    <div id="img-blok-conteiner">
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner1.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Котлы и водонагреватели</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner2.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Колонки газовые</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner3.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Радиаторы</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner4.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Коллекторы и<br>коллекторные группы</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner5.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Насосы</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner6.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Газовое оборудование</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner7.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Конвекторы</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner8.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Теплые полы</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner9.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Трубы и фитинги</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner10.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Краны</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner11.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Арматура для котельной</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner12.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Предохранительная арматура</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner13.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Водоснабжение</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner14.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Генераторы</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner15.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Сантехника</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner16.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Канализация</a></div>
+                        </div>
+                        <div class="img-blok">
+                            <div class="img-blok-img"><img src="img/baner17.png"></div>
+                            <div class="img-blok-a"><a href="#" title="Перейти">Теплоноситель</a></div>
+                        </div>
+                    </div>
+                    <!-- сноска-реклама -->
+                    <div>
+                        <!-- текст -->
+                        <div id="down-right-column">
+                            <h2>Купить газовые котлы в Брянске</h2>
+                            <div>
+                                <p>Компания «Тепло-Гарант» предоставляет своим покупателям проверенные, современные отопительные приборы, в том числе газовые котлы, от ведущих производителей. А также проводит гарантийное и постгарантийное сервисное обслуживание, пуско-наладочные работы, ремонт и монтаж.</p>
+                                <p>Начиная с 2006 года, ее специалисты дарят всем желающим возможность приобретать отопительное оборудование, оптимально соответствующие их запросам и материальным возможностям.</p>
+                                <p>Введя поисковый запрос «газовые котлы Брянск» и перейдя на нашу страницу из поисковой системы Вы можете не просто просмотреть обширный перечень нашей продукции, но и купить газовые котлы по демократичным ценам!</p>
+                                <p>Ведь именно наша компания уже на протяжении ряда лет предоставляет своим клиентам в Брянске и области обширный перечень отопительных приборов, выгодно отличающихся уровнем своей стоимости, внушительным списком поддерживаемых режимов и прочими характеристиками. </p>
+                                <p>Обратившись к нам, вы сможете приобрести газовые, электрические или твердотопливные котлы!</p>
+                            </div>
+                            <!-- логотипы -->
+                            <div id="down-img-right-column">
+                                <img src="img/firms.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- коментарии -->
+                    <div id="coments">
+                        <!-- заголовок -->
+                        <div id="head-coments">
+                            <div id="top-head-coments">
+                                <h3>Теплогарант</h3>
+                                <div id="yandexmap"><a href="#" title="Перейти">Яндекс Карты</a></div>
+                            </div>
+                            <!-- оценка -->
+                            <div id="grade">
+                                <div id="ingrade">4,3</div>
+                                <div id="allstars-conteiner">
+                                    <div class="allstars"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star05.png"></div>
+                                    <div class="allstars"><a href="#">8 отзывов • 35 оценок</a></div>
+                                </div>
+                            </div>
+                            <!-- поставьте нам оценку -->
+                            <div id="feedback">
+                                <p>Поставьте нам оценку</p>
+                                <button id="feedback-button">Оставить отзыв</button>
+                            </div>
+                        </div>
+                        <!-- коментарии -->
+                        <!-- 1й коментарий -->
+                        <div class="coment">
+                            <div class="head-coment">
+                                <img src="img/coment1.png">
+                                <div class="men-info">
+                                    <div class="name-coment">Даниил Бабченко</div>
+                                    <div class="date-coment">29 Ноября</div>
+                                </div>
+                            </div>
+                            <div class="allstars"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star05.png"></div>
+                            <p class="text-coment">Всегда выбираю этот магазин. Большой ассортимент и все в наличии. Хороший персонал, расположение магазина удобное. Цены невысокие.</p>
+                        </div>
+                        <!-- 2й коментарий -->
+                        <div class="coment">
+                            <div class="head-coment">
+                                <img src="img/coment2.png">
+                                <div class="men-info">
+                                    <div class="name-coment">Павел С</div>
+                                    <div class="date-coment">9 Ноября 2019</div>
+                                </div>
+                            </div>
+                            <div class="allstars"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star05.png"></div>
+                            <p class="text-coment">Отличный магазин есть всё для отопления и водоснабжения Приятный вежливо обслуживающий персонал Цены и качество приемлемые Рекомендую</p>
+                        </div>
+                        <!-- 3й кометарий -->
+                        <div class="coment">
+                            <div class="head-coment">
+                                <img src="img/coment3.png">
+                                <div class="men-info">
+                                    <div class="name-coment">Юрий Сарычев</div>
+                                    <div class="date-coment">4 Августа</div>
+                                </div>
+                            </div>
+                            <div class="allstars"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star05.png"></div>
+                            <p class="text-coment">Всё супер!</p>
+                        </div>
+                        <!-- бот-бар -->
+                        <div id="down-window-coments">
+                            <button id="more-coments">Больше отзывов на Яндекс Картах</button>
+                            <p><a href="#">Теплогарант на карте брянской области - Яндекс.Карты</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#"><button id="inup">Наверх</button></a>
+    </footer>
+</body>
+</html>
